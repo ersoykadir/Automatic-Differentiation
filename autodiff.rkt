@@ -96,6 +96,11 @@
         (else (hash-ref hash expr))
     )
 )
+(define (grad names values var expr)
+    (let ((hash (create-hash names values var)))
+        ((parse hash expr))
+    )
+)
 ;(parse (create-hash '(x y) '(10 20) 'x)
  ;       '(+ (* (+ x y) x) (+ y x 5)))
 
