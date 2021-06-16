@@ -1,3 +1,8 @@
+; kadir ersoy
+; 2018400252
+; compiling: yes
+; complete: yes
+
 #lang racket
 (provide (all-defined-out))
 ;; given
